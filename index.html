@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avengers Character Search</title>
+    <script src="app.js"></script>
     <?php include 'superheroes.php'; ?>
 </head>
 <body>
-   
-    <h1>Avengers Character Search</h1>
-    <button class="button">Search</button>
-    <script src="app.js"></script>
+    <header>
+        <h1>Avengers Character Search</h1>
+    </header>
+    
+    <p>Search by Full Name or Alias</p>
 
-    <div id="aliasList"></div>
+    <form>
+        <input type="text" id="searchbar" placeholder="e.g. Captain America or Steve Rogers" />
+        <button class="button">Search</button>
+
+    </form>
+    <div id="results">
+        <h2>Results</h2>
+        <hr>
+        <container id="hero">
+
+        </container>
+    </div>
+    
 </body>
 </html> 
+
+
+
