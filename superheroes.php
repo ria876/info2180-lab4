@@ -74,11 +74,13 @@ $superheroes = [
 $query = filter_input(INPUT_GET, 'query', FILTER_SANITIZE_STRING);
 
 if (!$query) {
+    echo "<div class='centered-list'>";
     echo "<ul>";
     foreach ($superheroes as $superhero) {
         echo "<li>{$superhero['alias']}</li>";
     }
     echo "</ul>";
+    echo "</div>";
 } else {
     $found = false;
     foreach ($superheroes as $superhero) {
