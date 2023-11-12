@@ -84,7 +84,7 @@ if (!$query) {
     foreach ($superheroes as $superhero) {
         if ($superhero['alias'] == $query || $superhero['name'] == $query) {
             echo "<h3>{$superhero['alias']}</h3>";
-            echo "<h4>{$superhero['name']}</h4>";
+            echo "<h4>A.K.A. {$superhero['name']}</h4>";
             echo "<p>{$superhero['biography']}</p>";
             $found = true;
             break;
