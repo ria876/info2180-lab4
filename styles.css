@@ -72,6 +72,14 @@ hr {
     width: 70%; 
     margin: auto;
 }
+.centered-list {
+    width: fit-content;
+    margin: auto;
+}
+
+.centered-list ul {
+    text-align: left;
+}
 
 .wrap{
     width: 30%;
